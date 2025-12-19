@@ -1,0 +1,147 @@
+
+.beneficiarios-container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+
+.beneficiarios-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+
+.beneficiarios-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.beneficiarios-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+
+.beneficiarios-content {
+  padding: 22px;
+  background: #fafafa;
+}
+
+
+.beneficiarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.beneficiarios-table th,
+.beneficiarios-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.beneficiarios-table thead th {
+  background: #f4f6fb;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.beneficiarios-table tbody tr:hover {
+  background: #f9fbff;
+}
+
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+.btn-edit {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-edit:hover { transform: translateY(-1px); }
+
+.btn-delete {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-delete:hover { transform: translateY(-1px); }
+
+
+.beneficiarios-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover { transform: translateY(-2px); }
+
+.empty-state {
+  padding: 28px;
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 900px) {
+  .beneficiarios-table th, .beneficiarios-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .home-grid, .beneficiarios-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .beneficiarios-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .beneficiarios-actions {
+    justify-content: center;
+  }
+
+  .action-buttons { gap: 6px; }
+}
