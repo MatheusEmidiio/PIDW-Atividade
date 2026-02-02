@@ -1,6 +1,5 @@
 # Grupo 7
 
-Gabriela Vieira Cavacini Venerato – RA: 1048242970
 
 Matheus Andrade Emidio – RA: 1048242968
 
